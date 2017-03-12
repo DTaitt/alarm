@@ -1,0 +1,118 @@
+body {
+	background: purple url(../img/dropout_bear.png) center top/100% no-repeat;
+	font-family: 'Abel', sans-serif;
+}
+
+#alarm {
+	width: 700px;
+	height: 400px;
+	background: rgba(220,20,60,.6);
+	margin: 50px;
+	padding: 30px;
+}
+
+#displayTime {
+	width: 100%;
+	height: 100px;
+	background: rgba(0,0,205,.5);
+	text-align: center;
+	font-size: 5em;
+	color: white;
+}
+
+.headings {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-family: 'Rock Salt', cursive;
+}
+
+h2{
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+.setTimeHeading {
+	flex: 2;
+}
+
+.snoozeHeading {
+	flex: 1;
+}
+
+.interact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#alarmTime {
+	flex: 2;
+	height: 130px;
+	margin: 0 10px;
+	background: rgba(0,0,205,.5);
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#alarmTime form {
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+#alarmTimeInput {
+	background: rgba(0,0,205,0);
+	height: 50px;
+	width: 300px;
+	border: none;
+	color: white;
+	font-size: .5em;
+}
+
+#alarmTimeSave {
+	height: 40px;
+	width: 100px;
+	font-size: .5em;
+	color: black;
+}
+
+#snooze {
+	flex: 1;
+	margin: 0 10px;
+	height: 150px;
+	font-size: 3em;
+	padding: 0;
+	border-radius: 10px;
+}
+
+#snooze {
+	background: grey url(../img/kanye_sleeping.jpg) center top/100% no-repeat
+}
+
+#snooze:active {
+	background: grey url(../img/kanye_yelling.jpg) center top/100% no-repeat
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	background: rgba(160,82,45,.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	font-family: 'Rock Salt', cursive;
+	letter-spacing: .2em;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+}
+
