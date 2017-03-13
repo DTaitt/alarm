@@ -7,7 +7,6 @@ $(document).ready(function(){
 	
 	var globalCurrentTime = [];
 
-
 // this updates the current time and pushes it to the globalCurrentTime array so that it can be used by the checkTime function
 	function updateCurrentTime () {
 
@@ -31,9 +30,22 @@ $(document).ready(function(){
 				ampm = "PM";
 			}
 
-			if (hours > 12) {
-				hours -=12;
+			if (ampm === "PM") {
+				switch(hours) {
+					case 200 > 1:
+					console.log("its a 1")
+				}
 			}
+
+			if (ampm === "AM") {
+				if (hours < 10) {
+					hours = "0" + hours;
+				}
+			}  else if (ampm = "PM") {
+					if (hours > 12) {
+						hours -=12;
+					}
+				}
 
 			if(minutes < 10) {
 				minutes = "0" + minutes;
@@ -46,6 +58,7 @@ $(document).ready(function(){
 			if (ampm === "PM") {
 				hours += 12;
 			}
+
 
 	//this displays the current time on a 24 hour clock
 
@@ -105,7 +118,8 @@ $(document).ready(function(){
 			}
 
 		}
-		
+		console.log(alarmTime)
+		console.log(globalCurrentTime)
 	}
 
 // this function stops the audio
@@ -117,7 +131,7 @@ $(document).ready(function(){
 		function resetAudio () {
 			$("#alarmTone")[0].currentTime = 0;
 		}
-		
+
 	}
 
 
